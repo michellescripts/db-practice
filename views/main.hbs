@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's Add Data</title>
+  </head>
+  <body>
+    {{#each data}}
+    <h1>{{this.title}}</h1>
+    <h2>Charaters: {{#each name}}<li>{{this}}</li>{{/each}}</h2>
+    {{/each}}
+    <form class=""  method="post" action="/add">
+      <input type="text" name="title" value="" placeholder="Book Title" required>
+      <input type="text" name="name" value="" placeholder="Character Name" required>
+      <button>Add Character & Book</button>
+    </form>
+  </body>
+</html>
