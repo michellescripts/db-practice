@@ -7,7 +7,7 @@
   <body>
     {{#each data}}
     <h1>{{this.title}}</h1>
-    <h2>Charaters: {{#each name}}<li>{{this}}</li>{{/each}}</h2>
+    <h2>Characters: {{#each name}}<li>{{this}}</li>{{/each}}</h2>
     {{/each}}
     <form class=""  method="post" action="/add">
       <input type="text" name="title" value="" placeholder="Book Title" required>
